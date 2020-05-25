@@ -1,0 +1,62 @@
+
+	{% if site.google_plus %}
+	<!-- Google+ Authorship Information -->
+	<link rel="author" href="{{ site.google_plus }}">
+	<link rel="publisher" href="{{ site.google_plus }}">
+	{% endif %}
+	
+	<!-- Canonical -->
+	<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="vi_VN">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% endif %}">
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+	<meta property="og:site_name" content="{{ site.name }}">
+
+	<meta name="language" content="Vietnamese" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="geo.region" content="VN-HN" />
+    <meta name="geo.position" content="21.013788779151376;105.80183207988739" />
+    <meta name="ICBM" content="21.013788779151376, 105.80183207988739" />
+    <meta name="geo.placename" content="P1709, tòa nhà Trung Yên Plaza, số 1 phố Trung Hòa, Quận Cầu Giấy, Hà Nội" />
+	
+	{% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+	{% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+	
+	{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+	<link rel="canonical" href="{{ canonical }}">
+	<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+	
+	
+	{% if page.allow_search_engine == false %}
+	<meta name="robots" content="NOINDEX,NOFOLLOW"/>
+	{% endif %}
+	
+	<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+
+	<link rel="icon" type="image/png" href="{{ site.url }}/assets/img/favicon.ico">
+	<link type="image/x-icon" href="{{ site.url }}/assets/img/favicon.ico" rel='icon' />
+	
+	<!--link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/-->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+	
+	<!--CSS============================================= -->
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/linearicons.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/magnific-popup.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/nice-select.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/hexagons.min.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/animate.min.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/owl.carousel.css" media="none" onload="if(media!='all')media='all'">
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" media="none" onload="if(media!='all')media='all'">
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	

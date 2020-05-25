@@ -1,0 +1,49 @@
+---
+layout: blog
+title: "Tin Tức"
+h1-title: "Tin Tức"
+meta-title: "Tin Tức"
+description: ""
+meta-description: ""
+meta-keywords: ""
+permalink: "/blog/"
+published: true
+sitemap: true
+---
+<div class="col-lg-8 post-list blog-post-list">
+	{% for post in site.categories.blog limit:10 %}
+		<div class="single-post">
+			<img class="img-fluid" src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}">
+			<!--ul class="tags">
+				<li><a href="#">Art, </a></li>
+				<li><a href="#">Technology, </a></li>
+				<li><a href="#">Fashion</a></li>
+			</ul-->
+			<a href="{{ site.url }}{{ post.url }}">
+				<h2 style="font-size: 26px;text-align: center;">{{ post.title }}</h2>
+			</a>
+			<!--p>
+				MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed MCSE training.
+			</p-->
+			<div class="bottom-meta">
+				<div class="user-details row align-items-center">
+					<div class="comment-wrap col-lg-6">
+						<ul>
+							<li><a href="#"><span class="lnr lnr-heart"></span>	4 likes</a></li>
+							<li><a href="#"><span class="lnr lnr-bubble"></span> 06 Comments</a></li>
+						</ul>
+					</div>
+					<div class="social-wrap col-lg-6">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li><a href="#"><i class="fa fa-behance"></i></a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi-VN" class="no-js">
+<head>
+
+	{% include head.html %}
+
+</head>
+
+<body>
+
+	{% include header.html %}
+
+	<!-- start banner Area -->
+	<section class="banner-area relative" id="home">
+		<div class="overlay overlay-bg"></div>
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="about-content col-lg-12">
+					<h1 class="text-white">My Blog</h1>
+					<p class="text-white link-nav"><a href="{{ site.url }}">Trang chủ </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{{ site.url }}{{ post.url }}"> My Blog</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+	
+	<!-- Start blog-posts Area -->
+	<section class="blog-posts-area section-gap">
+		<div class="container">
+			<div class="row">
+				
+				{{ content }}
+
+				{% include sidebar.html %}
+
+			</div>
+		</div>
+	</section>
+	<!-- End blog-posts Area -->
+
+	{% include footer.html %}
+
+	{% include footer_script.html %}
+
+</body>
+</html>

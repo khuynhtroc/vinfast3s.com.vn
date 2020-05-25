@@ -1,0 +1,56 @@
+name: "HOTLINE: 0985.629.621"
+title: "HOTLINE: 0985.629.621"
+slogan: "Nguyễn Trọng Huỳnh"
+email: info@nguyentronghuynh.com
+description: ""
+url: "https://nguyentronghuynh.com"
+base url: "https://nguyentronghuynh.com"
+allow_search_engine: true
+google_verify: "v6zpRiKh3pXEGi47WklDPdIR6V28K-6whJLinfI_HLM"
+bing_verify: ""
+google_analytics: "UA-137398840-1"
+google_tag_manager_id: "GTM-N7VBGX6"
+google_plus: ""
+disqus_shortname: ""
+
+# Build Settings
+markdown: "kramdown"
+encoding: "UTF-8"
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+# http://jekyllrb.com/docs/permalinks/
+# /:title/ /:title.html
+permalink:   "/:categories/:title/"
+
+# Amount of post to show on home page
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+future: true
+highlighter: rouge
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-paginate
+  # http://jekyllrb.com/docs/templates/#gist
+  # - jekyll-gist
+  # - jekyll-less
+include: [".htaccess", "LICENSE.txt", "*.woff", "*.ttf"]
+exclude: ["_site", lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "vendor"]
+collections:
+  pages:
+    output: true
+
+
