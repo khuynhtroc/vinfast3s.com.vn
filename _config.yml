@@ -5,7 +5,7 @@ email: info@nguyentronghuynh.com
 description: ""
 url: "https://khuynhtroc.github.io/vinfast3s.com.vn"
 base url: "https://khuynhtroc.github.io/vinfast3s.com.vn"
-allow_search_engine: true
+allow_search_engine: false
 google_verify: "v6zpRiKh3pXEGi47WklDPdIR6V28K-6whJLinfI_HLM"
 bing_verify: ""
 google_analytics: "UA-137398840-1"
