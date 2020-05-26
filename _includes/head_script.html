@@ -49,3 +49,63 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <meta name="google-site-verification" content="{{ site.google_verify }}" />
+
+
+<script src="bundles/owlcarousel8060?v=c90iDFh5VXIw0UTiyqLZVeW54HT4As3QLTRplUgXUuQ1"></script>
+
+
+<script>
+  var msmenu = jQuery.noConflict();
+  jQuery(document).ready(function ($) {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 80) {
+        $('#block-44').addClass("fixmenu");
+        $('#sidebar').addClass("fixmenu2");
+      }
+      else {
+        $('#block-44').removeClass("fixmenu");
+        $('#sidebar').removeClass("fixmenu2");
+      }
+    })
+  })
+
+ jQuery(document).ready(function ($) {
+$('.owl-block-148').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        responsiveClass: true,
+        responsive: { 0: { items: 1, nav: false }, 1000: { items: 1,  nav: false},  5000: {  items: 2,  nav: false }, }  });
+$('.owl-block-135').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        responsiveClass: true,
+        responsive: { 0: { items: 2, nav: false }, 1000: { items: 3,  nav: false},  5000: {  items: 3,  nav: false }, }  });
+$('.owl-block-159').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        responsiveClass: true,
+        responsive: { 0: { items: 2, nav: false }, 1000: { items: 3,  nav: false},  5000: {  items: 3,  nav: false }, }});
+$('.owl-block-161').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        responsiveClass: true,
+        responsive: { 0: { items: 2, nav: false }, 1000: { items: 3,  nav: false},  5000: {  items: 3,  nav: false }, }});
+$('.owl-block-162').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        responsiveClass: true,
+        responsive: { 0: { items: 2, nav: false }, 1000: { items: 3,  nav: false},  5000: {  items: 3,  nav: false }, }});
+$('.owl-block-163').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        responsiveClass: true,
+        responsive: { 0: { items: 2, nav: false }, 1000: { items: 3,  nav: false},  5000: {  items: 3,  nav: false }, }});
+});
+
+</script>
